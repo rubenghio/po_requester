@@ -1,0 +1,28 @@
+{
+  "name": "po_requester",
+  "version": "1.0.0",
+  "description": "Purchase order request app with Node.js backend, Google SSO, and role-based access.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "NODE_ENV=development node server.js"
+  },
+  "keywords": [
+    "purchase-order",
+    "nodejs",
+    "express",
+    "google-sso",
+    "roles"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.21.2",
+    "express-session": "^1.18.1",
+    "pg": "^8.13.1",
+    "morgan": "^1.10.0",
+    "passport": "^0.7.0",
+    "passport-google-oauth20": "^2.0.0"
+  }
+}

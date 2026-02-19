@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Panel Finance / Admin - Órdenes de Compra</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/styles/styles.css">
+</head>
+
+<body class="inter-font">
+  <div class="container py-4">
+    <div class="d-flex justify-content-between align-items-center mb-3">
+      <h2>Panel de Órdenes de Compra</h2>
+      <div>
+        <span id="admin-user-info" class="text-muted small me-2"></span>
+        <button id="admin-btn-home" class="btn btn-outline-secondary btn-sm me-2">Volver al formulario</button>
+        <button id="admin-btn-logout" class="btn btn-outline-secondary btn-sm">Cerrar sesión</button>
+      </div>
+    </div>
+
+    <div id="admin-alert" class="alert d-none" role="alert"></div>
+
+    <div id="admin-not-allowed" class="alert alert-danger d-none" role="alert">
+      No tienes permisos para ver este panel. Debes tener rol Finance o Admin.
+    </div>
+
+    <div id="admin-content" class="d-none">
+      <div class="d-flex justify-content-between align-items-center mb-2">
+        <h5>Órdenes registradas</h5>
+        <button id="admin-btn-reload" class="btn btn-outline-primary btn-sm">Recargar</button>
+      </div>
+
+      <div class="table-responsive">
+        <table class="table table-striped table-hover align-middle" id="admin-requests-table">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Creado</th>
+              <th>Solicitante</th>
+              <th>Email</th>
+              <th>Rol</th>
+              <th>Estado</th>
+              <th>Descripción</th>
+              <th>Total</th>
+              <th>Acciones</th>
+            </tr>
+          </thead>
+          <tbody id="admin-requests-body">
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <script src="/js/admin.js"></script>
+</body>
+
+</html>
+
