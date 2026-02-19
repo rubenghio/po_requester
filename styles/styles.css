@@ -1,0 +1,40 @@
+body {
+    background-color: #f4f7f6;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card {
+    border: none;
+    border-radius: 12px;
+}
+
+.card-header {
+    border-radius: 12px 12px 0 0 !important;
+    font-weight: bold;
+    background-image: url("../images/background_header_900x122.png");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.btn-primary {
+    background-color: #0056b3;
+    border: none;
+}
+
+.table thead {
+    background-color: #e9ecef;
+}
+
+.total-section {
+    font-size: 1.2rem;
+    background: #f8f9fa;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.inter-font {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+}
